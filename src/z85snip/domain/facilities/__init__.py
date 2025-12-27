@@ -1,1 +1,1 @@
-﻿\"\"\"Facilities package.\"\"\"
+"""Facilities package."""
