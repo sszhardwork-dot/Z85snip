@@ -22,6 +22,9 @@ dev = [
   "mypy>=1.10"
 ]
 
+[project.scripts]
+z85snip-launch = "z85snip.launcher:main"
+
 [tool.setuptools]
 package-dir = {"" = "src"}
 

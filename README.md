@@ -4,11 +4,17 @@
 
 ## Быстрый старт
 - Создайте venv и установите зависимости: `pip install -e .`.
-- Запустите расчёт усреднителя: `python -m z85snip --flow-m3-per-day 960 --flow-min-m3-per-day 720 --flow-max-m3-per-day 1200 --averaging-hours 4 --averaging-coefficient 1.15`.
+- Лаунчер со сценариями/тестами/UI: `z85snip-launch scenario A` (или `ui`, `tests`, `equalization ...`).
+- Запуск расчёта усреднителя напрямую: `python -m z85snip --flow-m3-per-day 960 --flow-min-m3-per-day 720 --flow-max-m3-per-day 1200 --averaging-hours 4 --averaging-coefficient 1.15`.
 - Если есть почасовой профиль, загрузите его через `io.importers.load_inflow_profile_csv` и передайте в пайплайн как `Flow`.
-- Каркас UI с вкладками «Схема/Приток/Параметры/Отчет» можно открыть командой `python -m z85snip.ui.qt.main` (PySide6).
+- Каркас UI с вкладками «Схема/Приток/Параметры/Отчет» можно открыть командой `python -m z85snip.ui.qt.main` или через лаунчер `z85snip-launch ui`.
 
 Документ по единицам и входным данным: [docs/inputs.md](docs/inputs.md).
+
+### Мини-гайд пользователя
+- **Лаунчер**: `z85snip-launch scenario B --export-json result.json` — считает цепочку R1→P1→O1→AT1→RG1 и сохранит отчет.
+- **UI**: вкладки «Схема/Приток/Параметры/Отчет» повторяют структуру требований; справа карточка сооружения со всеми секциями (идентификация, режимы расхода, параметры СНиП, геометрия, компоновка, отчет).
+- **Тесты**: `z85snip-launch tests` выполняет pytest и проверяет корректность расчета всех сценариев.
 
 ## Слои и директории
 - `src/z85snip/core` — базовые типы, валидация, пайплайн, реестр.
