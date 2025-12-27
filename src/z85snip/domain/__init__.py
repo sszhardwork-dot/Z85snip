@@ -1,1 +1,1 @@
-﻿\"\"\"Domain model: facilities, flows, parameters.\"\"\"
+"""Domain model: facilities, flows, parameters."""

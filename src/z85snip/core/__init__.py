@@ -1,1 +1,1 @@
-﻿\"\"\"Core utilities: validation, units, errors.\"\"\"
+"""Core utilities: validation, units, errors."""

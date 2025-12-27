@@ -1,1 +1,1 @@
-﻿\"\"\"Infrastructure: persistence, IO, adapters.\"\"\"
+"""Infrastructure: persistence, IO, adapters."""

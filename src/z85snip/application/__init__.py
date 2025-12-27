@@ -1,1 +1,1 @@
-﻿\"\"\"Application layer: use-cases, orchestration.\"\"\"
+"""Слой прикладной оркестрации пайплайна."""

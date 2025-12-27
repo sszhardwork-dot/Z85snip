@@ -1,4 +1,4 @@
-﻿[build-system]
+[build-system]
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
@@ -22,6 +22,9 @@ dev = [
   "mypy>=1.10"
 ]
 
+[project.scripts]
+z85snip-launch = "z85snip.launcher:main"
+
 [tool.setuptools]
 package-dir = {"" = "src"}
 
@@ -30,3 +33,4 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["src"]

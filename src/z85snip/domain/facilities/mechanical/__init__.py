@@ -1,1 +1,1 @@
-﻿\"\"\"Mechanical facilities (grids, grit chambers, primary clarifiers, etc.).\"\"\"
+"""Mechanical facilities (grids, grit chambers, primary clarifiers, etc.)."""
